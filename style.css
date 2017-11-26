@@ -1,0 +1,566 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Roboto:400,700');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html,
+body { 
+height: 100%;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+a:hover,a:focus { text-decoration: none;
+outline: none;}
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/* Header Area css*/
+
+
+.navbar-inverse {
+    position: fixed;
+	left: 0;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+	border-color: transparent;
+	background: rgba(125,120,110,0.7);
+	border-radius: 0px;
+}
+.navber{
+	border-radius: none;
+}
+.navbar-inverse .navbar-nav li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-nav  li  a {
+    padding: 50px 15px;
+}
+.navbar-inverse .navbar-nav  li  a:hover {
+    background-color: transparent;
+    color: #85d27d;
+}
+.header_area, .welcome-slider, .welcome-slider div {
+    height: 100%;
+}
+.slider-table {
+    display: table;
+    width: 100%;
+}
+.slider-cell,.slider-cell div{
+	height: auto;
+}
+.slider-cell{
+    display: table-cell;
+    vertical-align: middle;
+	height: auto;
+}
+.welcome-slider{
+	background: url(img/welcome-bg.jpg) center center/cover;
+}
+.welcome-txt {
+    text-transform: uppercase;
+}
+.welcome-txt h1 {
+    border: 1px solid #fff;
+    font-size: 100px;
+    padding: 40px;
+	color: #fff;
+}
+
+.welcome-txt h1 span {
+    color: #85d27d;
+}
+
+.welcome-txt h3 {
+    font-size: 40px;
+	color: #fff;
+}
+
+.welcome-txt h4 {
+    font-size: 36px;
+	color: #fff;
+}
+.welcome-slider:before {
+    background: rgba(0, 0, 0, .70);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li {
+    display: inline-block;
+    padding: 40px 0 20px 28px;
+}
+.menu ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    color: #85d27d;
+}
+
+.carousel-indicators li {
+	background: #fff
+}
+.carousel-indicators .active {
+    background-color: #85d27d;
+	border: 1px solid #85d27d;
+}
+.section-heading h1 {
+    color: #040404;
+    font-size: 36px;
+    text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.section-heading p{
+    color: #262627;
+    padding: 0;
+}
+/*About Area CSS*/
+.about-area {
+    padding: 115px 0;
+}
+.about-content {
+    padding-top: 60px;
+}
+
+.single-about-content{
+	margin-top: 20px;
+}
+.single-about-content i {
+    color: #020202;
+    font-size: 50px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.single-about-content h2 {
+    font-size: 24px;
+	font-weight: 700;
+    text-transform: uppercase;
+}
+.single-about-content p {
+    color: #040404;
+    padding: 0 10px;
+}
+.single-about-content:hover i, .single-about-content:hover h2 {
+    color: #85d27d;
+}
+/* Service area css*/
+
+.service-area {
+    background: #e0e0e0 none repeat scroll 0 0;
+    padding: 90px 0;
+}
+.services {
+    margin-top: 50px;
+}
+.single-service {
+    position: relative;
+	margin-top: 30px;
+}
+.img-hover {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+	transform: scale(0);
+	transition: all 0.2s ease 0.4s;
+}
+
+.img-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.service-link {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.service-link a {
+    display: inline-table;
+    
+}
+.service-link a i {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: table-cell;
+    font-size: 20px;
+    height: 50px;
+    vertical-align: middle;
+    width: 50px;
+}
+
+.service-link a i:hover {
+    background: #85d27d;
+    border: 1px solid #85d27d;
+}
+
+.single-service:hover .img-hover{
+	transform: scale(1);
+}
+
+/*Poetfolio Area */
+
+
+.portfolio-area {
+    padding-bottom: 50px;
+    padding-top: 160px;
+}
+.portfolio-list {
+    padding-top: 30px;
+}
+.portfolioFilter {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.portfolioFilter a {
+    background: #000000;
+    color: #fff;
+    font-weight: 700;
+    margin-right: 10px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.portfolio-area a:hover {
+    background: #85d27d;
+}
+
+
+.p-item {
+    border: 10px solid #fff;
+    width: 33.3333%;
+	overflow: hidden;
+}
+
+.portfolio-hover {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top:0;
+    width: 100%;
+    z-index: 1;
+	transform: scale(0);
+	transition: all 0.4s ease 0.3s;
+}
+.portfolio-hover::after {
+    background: rgba(0, 0, 0, 0.78) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.p-cell h2 {
+    color: #85d27d;
+    text-transform: uppercase;
+}
+.p-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.p-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.p-item:hover .portfolio-hover {
+	transform: scale(1);
+}
+
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+ 
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+
+/*Pricing Area CSS*/
+
+.pricing-area {
+    padding: 50px 0;
+}
+.price-list {
+    padding-top: 30px;
+}
+
+.single-picing-list {
+    background: #383839 none repeat scroll 0 0;
+    color: #fff;
+    padding: 20px 55px;
+    text-align: center;
+	transition: 0.2s;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+.pricnig-head p {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.pricnig-head p sup {
+    font-size: 115%;
+}
+
+.pricnig-head p span {
+    font-size: 30px;
+}
+.pricnig-head h3 {
+    font-size: 20px;
+}
+.pricnig-head {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    height: 125px;
+    line-height: 79px;
+    margin: 0 auto 20px;
+    width: 125px;
+	transition: .2s;
+}
+.single-picing-list ul {
+    list-style: none;
+    margin: 0 0 30px;
+    padding: 0;
+}
+.single-picing-list li {
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.single-picing-list .order-buttton {
+    background: #fdfcfb;
+    color: #39393a;
+    padding: 10px 20px;
+    text-transform: uppercase;
+	transition: 0.2s;
+}
+
+.single-picing-list:hover{
+	background: #85D27D;
+}
+.single-picing-list:hover .order-buttton ,
+.single-picing-list:hover .pricnig-head {
+    background: #ffffff;
+    color: #85D27D;
+}
+/*Project Area CSS*/
+
+.project-area{
+	background: url(img/project-bg.jpg) 0 0 /cover;
+	padding: 100px 0px;
+	position: relative;
+}
+.project-area:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+}
+.single-counter{
+	background: rgba(0, 0, 0, 0.9);
+    border: 1px solid #7d786e;
+	border-radius: 1px;
+	max-height: 160px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.single-counter .counter {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 700;
+}
+.single-counter p{
+	color: #fff;
+	font-weight: 700;
+}
+
+/*Contact Area CSS*/
+
+
+.contact-area {
+    padding: 130px 0;
+}
+
+.contact-list {
+    padding-top: 80px;
+}
+.single-contact{
+	margin-top: 20px;
+}
+.single-contact i {
+    color: #222323;
+    font-size: 60px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease 0s;
+}
+.single-contact h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.single-contact:hover i, .single-contact:hover h3 {
+    color: #85d27d;
+}
+
+/*Contact Form Area CSS*/
+
+.contact-form {
+    background: #f4f4f4 none repeat scroll 0 0;
+    padding-bottom: 40px;
+    padding-top: 130px;
+}
+
+input[type="name"], input[type="email"], input[type="phone"] {
+    background: #ffffff;
+    border: none;
+    color: #565656;
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+textarea {
+    border: medium none;
+    color: #565656;
+    display: block;
+    margin-bottom: 20px;
+    max-height: 95px;
+    padding: 20px;
+    width: 100%;
+	resize: none;
+}
+input[type="submit"] {
+    background: #85d27d none repeat scroll 0 0;
+    border: medium none;
+    color: #fefefe;
+    margin-top: 5px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+}
+
+/*Google Map Area */
+#map{
+	height: 465px;
+	width: 100%;
+}
+
+
+.scroll-top {
+    background: #85d27d none repeat scroll 0 0;
+    border-radius: 3px;
+    bottom: 70px;
+    height: 50px;
+    right: 10px;
+    position: fixed;
+    text-align: center;
+    width: 50px;
+}
+
+.scroll-top  a {
+    color: #fff;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+/*Footer Area CSS*/
+.footer_area {
+    background: #000000;
+}
+.footer_area p {
+    color: #fefefe;
+    padding: 20px;
+}
+.footer_area i {
+    color: #fefefe;
+    font-size: 24px;
+    padding: 15px;
+    transition: all 0.3s ease 0s;
+}
+.footer_area i:hover {
+    color: #85d27d;
+}

@@ -1,0 +1,105 @@
+
+@media only screen and (min-width: 1200px){
+	
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+	
+	.single-about-content p {
+    	padding:  0px;
+	}
+	.single-about-content h2 {
+    	font-size: 20px;
+	}
+	
+	.navbar-nav li a {
+		padding: 10px 0 35px 30px;
+	}
+	.welcome-txt h1 {
+    	font-size: 90px;
+	}
+	.single-picing-list {
+    	padding: 20px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.navbar-header {
+		display: block;
+		height: 80px;
+	}
+	
+	.navbar-brand img {
+		width: 120px;
+	}
+	.navbar-nav li a {
+		padding: 20px 0 20px 20px;
+	}
+	.navbar-inverse .navbar-nav li a {
+		font-size: 14px;
+	}
+	
+	img{
+		width: 100%;
+	}
+	.p-item{
+		width: 50%;
+	}
+	.portfolioFilter a {
+    	padding: 10px 12px;
+	}
+	
+}
+@media only screen and (max-width: 767px){
+	.navbar-toggle{
+		margin-top: 20px;
+	}
+	.nav li{
+		text-align: center;
+	}
+	.navbar-header {
+		display: block;
+		height: 80px;
+	}
+	
+	.navbar-brand img {
+		width: 100px;
+	}
+	.navbar-nav li a {
+		padding: 10px;
+	}
+	.welcome-txt h3 {
+    	font-size: 20px;
+	}
+	.welcome-txt h4 {
+    	font-size: 18px;
+	}
+	
+	.welcome-txt h1 {
+    	font-size: 60px;
+	}
+	img{
+		width: 100%;
+	}
+	.p-item{
+		width: 50%;
+	}
+	.portfolioFilter a {
+    	padding: 8px 10px;
+	}
+	
+	
+}
+@media only screen and (min-width:480px) and (max-width:767px){
+	.welcome-txt h1 {
+    	font-size: 40px;
+	}
+}
+@media only screen and (max-width:479px){
+	.welcome-txt h1 {
+    	font-size: 20px;
+	}
+	.p-item{
+		width: 100%;
+	}
+}
